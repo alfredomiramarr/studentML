@@ -23,7 +23,7 @@ def ordena_edades(list_students):
     c0 = 0
     list_orden = []
     list_orden = list_students
-    list_orden.sort(key=lambda student: student.age)
+    list_orden.sort(key=lambda student: student.age, reverse=True)
     while c0 < len(list_orden):
         
         print(list_orden[c0].get_age())

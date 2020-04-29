@@ -20,34 +20,37 @@ def crea_estudiantes(count_estudiantes):
 
 
 def ordena_edades(list_students):
-    list_students = []
-    print ("Edades de los estudiantes ordenadas")
-    for s in list_students:
-        print (s)
+    list_orden = []
+    list_orden = list_students
+    list_orden.sort(key=lambda student: student.age)
+    for i in list_orden:
+        print(i.get_age)
+    
+    return list_orden
         
-
 def separa_generos(list_students):
 	print ("metodo vacio")
 
 def main():
-	
-	options = 1
-	list_stud = []
-
-	while options != "0":
-		options = input("menu opciones 1. crea estudiantes - 2.ordena edades - 3.separa generos - 0. salir: ")
-
-		if options == "1":
-			print("crea estudiantes")
-			count_x = input("cuantos estudiantes daremos de alta: ")
-			list_stud = crea_estudiantes(count_x)
-
-		if options == "2":
-			print("ordena edades")
-            list_stud = ordena_edades(list_students)
-
-		if options == "3":
-			print("separa generos")
+    options = 1
+    list_stud = []
+    
+    while options != "0":
+        options = input("menu opciones 1. crea estudiantes - 2.ordena edades - 3.separa generos - 0. salir: ")
+        if options == "1":
+            print("crea estudiantes")
+            count_x = input("cuantos estudiantes daremos de alta: ")
+            list_stud = crea_estudiantes(count_x)
+        
+        if options == "2":
+            print("ordena edades")
+            li = list_stud
+            ordena_edades(li)
+            
+            
+        if options == "3":
+            print("separa generos")
 
 if __name__ == "__main__":
 	main()
+main()

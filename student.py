@@ -15,16 +15,6 @@ class student:
 
 	def set_carreer(self,carreer):
 		self.carreer = carreer
-        
-def set_name(self,name):
-        self.name = name
-        
-def get_name(self):
-		return ("nombre: " + self.name)
 	
-def get_age(self):
+	def get_age(self):
 		return ("edad: " + self.age)
-    
-def get_gender(self):
-		return ("gender: " + self.gender)
-

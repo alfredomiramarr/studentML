@@ -20,7 +20,11 @@ def crea_estudiantes(count_estudiantes):
 
 
 def ordena_edades(list_students):
-	print ("metodo vacio")
+    list_students = []
+    print ("Edades de los estudiantes ordenadas")
+    for s in list_students:
+        print (s)
+        
 
 def separa_generos(list_students):
 	print ("metodo vacio")
@@ -40,6 +44,7 @@ def main():
 
 		if options == "2":
 			print("ordena edades")
+            list_stud = ordena_edades(list_students)
 
 		if options == "3":
 			print("separa generos")

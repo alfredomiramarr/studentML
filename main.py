@@ -20,13 +20,17 @@ def crea_estudiantes(count_estudiantes):
 
 
 def ordena_edades(list_students):
+    c0 = 0
     list_orden = []
     list_orden = list_students
     list_orden.sort(key=lambda student: student.age)
-    for i in list_orden:
-        print(i.get_age)
+    while c0 < len(list_orden):
+        
+        print(list_orden[c0].get_age)
+        
+        c0 = c0 + 1
     
-    return list_orden
+    return 0
         
 def separa_generos(list_students):
 	print ("metodo vacio")

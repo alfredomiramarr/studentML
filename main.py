@@ -32,33 +32,34 @@ def ordena_edades(list_students):
     
     return 0
         
-def separa_generos(list_students):
+  def separa_generos(list_students):
     c1 = 0
     cH = 0
     cM = 0
-    
+   
     list_H = []
     list_M = []
     while c1 < len(list_students):
-        
-        if list_students.gender == "M":
+       
+        aux=list_students[c1].get_gender()
+        if aux == "M":
             list_M[cM] = list_students[cM]
             cM = cM + 1
-            
-        if list_students.gender == "H":
+           
+        if aux. == "H":
             list_H[cH] = list_students[cH]
             cH = cH + 1
-            
+           
         c1 = c1 + 1
-    
+   
     print("MUJERES: ")
     for i in list_M:
         print(list_M[i].get_name() + " " + list_M[i].get_gender())
-        
+       
     print("HOMBRES: ")
     for i in list_H:
         print(list_H[i].get_name() + " " + list_H[i].get_gender())
-        
+       
     return 0
 
 def main():
